@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import React from 'react';
+import Align from './Alignme';
 import './App.css';
+import ChangeColor from './changecolor';
+import Clock from './clock';
+import Counter from './Counter';
+import Color from './colorslide'
+import FontSizer from './FontSizer';
+import ShowHide from './showHide';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Counter />
+      <hr />
+      <ShowHide />
+      <hr />
+      <FontSizer />
+      <hr />
+      <Align />
+      <hr />
+      <Clock />
+      <hr />
+      <ChangeColor />
+      <hr />
+    <Color/>
+      
     </div>
   );
 }
